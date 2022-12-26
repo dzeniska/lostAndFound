@@ -30,7 +30,7 @@ class ChatAdapter(private val editMessageListener: EditMessageListener) :
     View.OnLongClickListener
 {
 
-    var messages: List<Messages> = listOf()
+    var listMessages: List<Messages> = listOf()
         set(newValue) {
 //            val diffResult = DiffUtil.calculateDiff(DiffUtilMessage(field , newValue))
 //            diffResult.dispatchUpdatesTo(this)
@@ -39,7 +39,7 @@ class ChatAdapter(private val editMessageListener: EditMessageListener) :
         }
 
     override fun getItemViewType(position: Int): Int {
-        return when(messages[position]){
+        return when(listMessages[position]){
             is Messages.MyMessage -> MY_MESSAGE
             is Messages.TimeSpace -> TIME_SPACE
             is Messages.HisMessage -> HIS_MESSAGE
@@ -58,7 +58,7 @@ class ChatAdapter(private val editMessageListener: EditMessageListener) :
         return true
     }
 
-    override fun getItemCount(): Int = messages.size
+    override fun getItemCount(): Int = listMessages.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MessageViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -71,13 +71,12 @@ class ChatAdapter(private val editMessageListener: EditMessageListener) :
 
         binding.root.setOnLongClickListener(this)
 
-
         return MessageViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: MessageViewHolder, position: Int) {
 
-        val message = messages[position]
+        val message = listMessages[position]
 
 
 
