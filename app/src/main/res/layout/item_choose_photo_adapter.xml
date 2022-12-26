@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imAddPhoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_add_photo"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round="8dp" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="32dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/theme_orange_color_dark"
+        app:layout_constraintBottom_toBottomOf="@id/imAddPhoto"
+        app:layout_constraintEnd_toEndOf="@id/imAddPhoto"
+        app:layout_constraintStart_toStartOf="@id/imAddPhoto"
+        app:layout_constraintTop_toTopOf="@id/imAddPhoto"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:constraint_referenced_ids="ibEditPhoto, ibDeletePhoto"
+         />
+
+    <ImageButton
+        android:id="@+id/ibEditPhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/description_reselect_photo"
+        android:background="@drawable/button_choose_or_delete_photo_background"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_replace"
+        app:layout_constraintEnd_toEndOf="@id/imAddPhoto"
+        app:layout_constraintTop_toTopOf="@id/imAddPhoto"
+         />
+
+    <ImageButton
+        android:id="@+id/ibDeletePhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/description_delete_photo"
+        android:background="@drawable/button_choose_or_delete_photo_background"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="@id/imAddPhoto"
+        app:layout_constraintTop_toBottomOf="@id/ibEditPhoto"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

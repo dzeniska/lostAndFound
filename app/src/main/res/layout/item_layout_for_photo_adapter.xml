@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/item_drawer_height"
+    android:layout_height="@dimen/item_drawer_height"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="2dp"
+    android:id="@+id/cl"
+    android:background="@drawable/background_item_adapter_lost"
+    >
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/ifvPhoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        app:round="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="?android:attr/selectableItemBackground"
+         />
+
+    <ImageView
+        android:id="@+id/ivImagePreload"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:src="@drawable/ic_main_search"
+        app:layout_constraintBottom_toBottomOf="@id/ifvPhoto"
+        app:layout_constraintEnd_toEndOf="@id/ifvPhoto"
+        app:layout_constraintStart_toStartOf="@id/ifvPhoto"
+        app:layout_constraintTop_toTopOf="@id/ifvPhoto" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Small.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:indeterminateTint="@color/brown"
+        app:layout_constraintBottom_toBottomOf="@id/ifvPhoto"
+        app:layout_constraintEnd_toEndOf="@id/ifvPhoto"
+        app:layout_constraintStart_toStartOf="@id/ifvPhoto"
+        app:layout_constraintTop_toTopOf="@id/ifvPhoto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

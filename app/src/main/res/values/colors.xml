@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black_38">#38000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
+    <color name="theme_color_50">#50FFFFFF</color>
+    <color name="theme_color">#18FFFF</color>
+    <color name="theme_color_dark">#006685</color>
+        <color name="theme_color_map">#7AADFC</color>
+    <color name="theme_orange_color_dark">#C37008</color>
+    <color name="theme_color_red">#643F00</color>
+    <color name="theme_color_light">#00ACC1</color>
+    <color name="theme_color_stroke">#18FF65</color>
+    <color name="action_bar_color">#FF9800</color>
+    <color name="action_bar_color_38">#38FF9800</color>
+        <color name="light_blue_A400_40">#6600AEFF</color>
+    <color name="invisible">#00000000</color>
+    <color name="yellow_background">#FFD54F</color>
+
+    <color name="input_background">#99DFE5F0</color>
+
+    <color name="white_38">#38FFFFFF</color>
+
+    <color name="brown">#6C0606</color>
+    <color name="brown_50">#506C0606</color>
+
+    <!-- circle map color-->
+    <color name="circle_stroke_color">@color/action_bar_color</color>
+    <color name="circle_fill_color">#363D5AFE</color>
+
+
+</resources>

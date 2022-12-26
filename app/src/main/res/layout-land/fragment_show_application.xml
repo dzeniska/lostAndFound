@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_dark"
+    tools:context=".ui.fragments.showApplication.ShowApplicationFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/theme_color_dark"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintDimensionRatio="W,1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/showPhotoViewPager"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/showPhotoTabLayout"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@color/invisible"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabIndicatorHeight="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/pbUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/action_bar_color"
+        android:visibility="gone"
+        android:elevation="10dp"
+        tools:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/text_data_size"
+                android:textColor="@color/theme_color_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="werfdsvd"
+                />
+
+            <ImageButton
+                android:id="@+id/btnLoc"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/custom_button_background"
+                android:contentDescription="@string/description_loc_unselected"
+                android:elevation="8dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_gps"
+                android:scaleType="fitStart"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="@color/white"
+                />
+
+            <ImageView
+                android:id="@+id/ivSelectCat"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_button_background"
+                android:contentDescription="@string/description_select_cat"
+                android:elevation="8dp"
+                android:padding="4dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_recycling"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnLoc"
+                app:layout_constraintTop_toTopOf="@id/btnLoc"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tvSetCat"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="48dp"
+                android:elevation="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/t_bold"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/item_found"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivSelectCat"
+                app:layout_constraintEnd_toEndOf="@id/ivSelectCat"
+                app:layout_constraintStart_toStartOf="@id/ivSelectCat"
+                app:layout_constraintTop_toTopOf="@id/ivSelectCat" />
+
+            <ImageButton
+                android:id="@+id/btnTelNum"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/custom_button_background"
+                android:contentDescription="@string/description_enter_tel_num"
+                android:elevation="8dp"
+                android:padding="4dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_phone_calling"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivSelectCat"
+                />
+
+            <TextView
+                android:id="@+id/tvShowTelNum"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="48dp"
+                android:elevation="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/t_bold"
+                android:gravity="center"
+                android:text="@string/_375_45"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:autofillHints="phone"
+                app:layout_constraintBottom_toBottomOf="@id/btnTelNum"
+                app:layout_constraintEnd_toEndOf="@id/btnTelNum"
+                app:layout_constraintStart_toStartOf="@id/btnTelNum"
+                app:layout_constraintTop_toTopOf="@id/btnTelNum"
+                />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:padding="16dp"
+                android:background="@drawable/custom_button_background"
+                android:textColor="@color/white"
+                android:text="@string/no_message"
+                android:textSize="17sp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnTelNum" />
+
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:constraint_referenced_ids=" tvWarning, btnInfo, barrierInfoTop, barrierInfoBottom" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrierInfoTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="top"
+                app:constraint_referenced_ids="tvWarning,btnInfo"/>
+
+
+            <TextView
+                android:id="@+id/tvWarning"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColor="#E31111"
+                android:text="@string/blocked_add"
+                app:layout_constraintTop_toBottomOf="@id/tvMessage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnInfo"
+                app:layout_constraintBottom_toTopOf="@id/barrierInfoBottom"
+                />
+
+            <ImageButton
+                android:id="@+id/btnInfo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_button_background"
+                android:contentDescription="@string/tv_info"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_info"
+                app:layout_constraintBottom_toBottomOf="@id/tvWarning"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvWarning"
+                app:layout_constraintTop_toTopOf="@id/tvWarning"
+                />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrierInfoBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="tvWarning,btnInfo"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupButtonsEditAndDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:constraint_referenced_ids=" groupEdit, groupDelete" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="btnEdit, tvEdit"
+                />
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:layout_goneMarginTop="8dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_button_background"
+                android:elevation="8dp"
+                android:padding="4dp"
+                android:scaleType="fitStart"
+                app:layout_constraintStart_toStartOf="@id/tvMessage"
+                app:layout_constraintTop_toBottomOf="@id/barrierInfoBottom"
+                app:layout_constraintEnd_toStartOf="@id/btnDelete"
+                android:src="@drawable/ic_edit"
+                app:tint="@color/theme_color_stroke"
+                android:contentDescription="@string/need_internet" />
+            <TextView
+                android:id="@+id/tvEdit"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:elevation="9dp"
+                android:gravity="center"
+                android:fontFamily="@font/t_bold"
+                android:textColor="@color/white"
+                android:textSize="4sp"
+                android:rotation="-45"
+                android:text="@string/edit"
+                app:layout_constraintStart_toStartOf="@id/btnEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEdit"
+                app:layout_constraintTop_toTopOf="@id/btnEdit"
+                app:layout_constraintBottom_toBottomOf="@id/btnEdit"
+                />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="btnDelete, tvDelete"
+                />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:layout_goneMarginTop="8dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_button_background"
+                android:elevation="8dp"
+                android:padding="4dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_delete_full"
+                app:layout_constraintStart_toEndOf="@id/btnEdit"
+                app:layout_constraintTop_toBottomOf="@id/barrierInfoBottom"
+                app:layout_constraintEnd_toEndOf="@id/tvMessage"
+                app:tint="@color/theme_color_stroke" />
+
+            <TextView
+                android:id="@+id/tvDelete"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:elevation="9dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/t_bold"
+                android:textSize="4sp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toStartOf="@id/btnDelete"
+                app:layout_constraintEnd_toEndOf="@id/btnDelete"
+                app:layout_constraintTop_toTopOf="@id/btnDelete"
+                app:layout_constraintBottom_toBottomOf="@id/btnDelete"
+                />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupNoRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids=" tvNoRules, tvBlock, btnNoRules" />
+
+            <TextView
+                android:id="@+id/tvNoRules"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_goneMarginTop="48dp"
+                android:layout_marginTop="48dp"
+                android:textColor="@color/input_background"
+                android:text="@string/can_block"
+                app:layout_constraintTop_toBottomOf="@id/btnEdit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnNoRules"
+                app:layout_constraintBottom_toTopOf="@id/barrier"
+                />
+
+            <ImageButton
+                android:id="@+id/btnNoRules"
+                android:layout_width="48dp"
+                android:layout_height="62dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_button_background"
+                android:contentDescription="@string/tv_info"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/ic_block"
+                app:layout_constraintBottom_toBottomOf="@id/tvNoRules"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvNoRules"
+                app:layout_constraintTop_toTopOf="@id/tvNoRules"
+                />
+            <TextView
+                android:id="@+id/tvBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:textSize="11sp"
+                android:elevation="12dp"
+                android:textColor="@color/brown"
+                android:text="@string/button_block"
+                app:layout_constraintStart_toStartOf="@id/btnNoRules"
+                app:layout_constraintEnd_toEndOf="@id/btnNoRules"
+                app:layout_constraintTop_toTopOf="@id/btnNoRules"/>
+
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="groupNoRules, groupEdit, groupDelete"
+                app:barrierDirection="bottom"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                app:layout_constraintTop_toBottomOf="@id/barrier"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

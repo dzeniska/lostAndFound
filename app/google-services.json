@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "367049868778",
+    "firebase_url": "https://lostandfound-fb3ef-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "lostandfound-fb3ef",
+    "storage_bucket": "lostandfound-fb3ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367049868778:android:8c2ccf990198d270451e93",
+        "android_client_info": {
+          "package_name": "com.dzenis_ska.lostandfound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367049868778-9fqd47cr6pgmkinkrfa8otufgsu3oqsd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dzenis_ska.lostandfound",
+            "certificate_hash": "f7340a8b6fd80745293c8fb59d080193209a11cd"
+          }
+        },
+        {
+          "client_id": "367049868778-ea0os2i4cr6qv5spt1qvm7iijqjs8hal.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dzenis_ska.lostandfound",
+            "certificate_hash": "b13e7a1ecbc575cb853521b05e6f41d6b848dc77"
+          }
+        },
+        {
+          "client_id": "367049868778-ukp39v36mfffku85r0r2c8jio11626uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dzenis_ska.lostandfound",
+            "certificate_hash": "97983bf3a0b7ce8111fee8e6339977c755e0af9a"
+          }
+        },
+        {
+          "client_id": "367049868778-n0eharnon8h71ij8b34ve80jbu8429se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-7LziQvHukEcSy5LYvRrB5L3iFDtQVZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367049868778-n0eharnon8h71ij8b34ve80jbu8429se.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LostAndFound" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+        <!--        <item name="colorPrimary">@color/purple_500</item>-->
+        <!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+        <!--        <item name="colorOnPrimary">@color/white</item>-->
+        <!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+        <!--        <item name="colorSecondary">@color/teal_200</item>-->
+        <!--        <item name="colorSecondaryVariant">@color/teal_700</item>-->
+        <!--        <item name="colorOnSecondary">@color/black</item>-->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/theme_orange_color_dark</item>
+        <item name="android:navigationBarColor">@color/theme_orange_color_dark</item>
+
+        <!-- Customize your theme here. -->
+        <item name="navigationRailStyle">@style/myNavigationRailStyle</item>
+        <item name="bottomNavigationStyle">@style/myBottomNavigationStyle</item>
+        <!-- <item name="android:windowTranslucentStatus">true</item>-->
+        <!--  <item name="android:windowTranslucentNavigation">true</item>-->
+        <!--        <item name="android:immersive">true</item>-->
+        <!--        <item name="android:windowFullscreen">true</item>-->
+        <!--        <item name="android:windowTranslucentStatus">true</item>-->
+        <!--        <item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+</resources>

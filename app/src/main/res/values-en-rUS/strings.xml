@@ -1,0 +1,142 @@
+<resources>
+<!--    <string name="app_name" translatable="false">Бюро знаходак</string>-->
+
+
+    <!--Navigation Rail Menu-->
+    <string name="item_lost">Lost</string>
+    <string name="item_found">Found</string>
+    <string name="item_all_ann">All</string>
+    <string name="item_registration">Registration</string>
+    <string name="item_add_application">Send an ad</string>
+
+    <!-- Show Dialog Permissions-->
+    <string name="permissions_denied_forever">Permissions denied forever</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="permission_denied_forever_header">"You have permanently denied us permissions: \n%1$s,\n%2$s."</string>
+    <string name="permission_denied_forever_message">"But you can change your mind in the app settings"</string>
+    <string name="open">Open</string>
+
+    <!-- Show Dialog LogOut-->
+    <string name="action_on_google_account">Action on Google account</string>
+    <string name="change_google_account">To change</string>
+    <string name="exit_from_google_account">Exit</string>
+
+
+    <!--Dialog UI-->
+    <string name="exit">exit</string>
+    <string name="ok">Yes</string>
+    <string name="ok3">I agree</string>
+
+    <!-- Show Dialog Block Ann-->
+    <string name="do_not_enter_char">You have not entered any characters</string>
+
+
+    <!-- Fragment Add Application-->
+    <string name="description_loc_unselected">Location selection</string>
+    <string name="tv_loc_unselected">Location</string>
+    <string name="description_select_cat">Choosing a category: lost or found</string>
+    <string name="tv_select_cat_lost_or_found">Lost or found</string>
+    <string name="tv_select_cat_lost">Lost</string>
+    <string name="tv_select_cat_found">Found</string>
+    <string name="description_enter_tel_num">enter your phone number</string>
+    <string name="_375_45">+375 45 … … …</string>
+    <string name="header">Heading</string>
+    <string name="additional_information">Additional information</string>
+    <string name="info">Important! Before publishing an ad, read the rules</string>
+    <string name="description_info">Important! Before publishing an ad, read the rules</string>
+    <string name="description_publish_an_ad">Publish an ad</string>
+    <!-- Fill fields-->
+    <string name="no_change_location">Location not selected</string>
+    <string name="no_change_photo">If you don\'t have a photo 📸 of the lost item, please upload a similar picture from the Internet</string>
+    <string name="no_change_category">Not selected category</string>
+    <string name="no_change_tel_num">Phone number not selected</string>
+    <string name="no_tel_num">No have telephone number  \n 📵</string>
+
+    <string name="no_change_additional_info">No additional information</string>
+
+    <!-- Item Choose Photo Adapter-->
+    <string name="description_reselect_photo">Photo Selection</string>
+    <string name="description_delete_photo">Delete a photo</string>
+
+    <!-- Fragment Map-->
+    <string name="your_last_location">the location is set</string>
+    <string name="location_searching">location search is being performed…</string>
+    <string name="gps_provider_is_not_enabled">GPS is disabled!</string>
+<!--    <string name="your_web_client_id" translatable="false">367049868778-ukp39v36mfffku85r0r2c8jio11626uu.apps.googleusercontent.com</string>-->
+    <string name="no_gps_permission">Permission to use GPS is required!</string>
+    <string name="email">email</string>
+    <string name="loading_markers">loading…</string>
+    <string name="ann_was_deleted">Wow, bad luck!.. This ad has already been removed</string>
+    <string name="need_to_register">you need to register</string>
+    <string name="menu">menu</string>
+
+
+    <!-- Dialog Deleted Application -->
+    <string name="this_application_was_deleted">this ad has just been removed</string>
+
+    <!-- Dialog Blocked Application -->
+    <string name="this_application_was_blocked">Sorry, but this ad does not comply with the publication rules, \n you may not be able to see it anymore</string>
+
+    <!-- Fragment Change Location-->
+    <string name="save">Save</string>
+
+    <!-- Dialog Prepare And Upload Images -->
+    <string name="preparing_images_for_uploading">preparing images for uploading… %1s …</string>
+    <string name="preparing_main_image_for_uploading">main photo</string>
+    <string name="images_uploading">loading %2s image: %1s%% …</string>
+<!--    <string name="u_neskladovaye" translatable="false">Ў</string>-->
+    <string name="main_image_uploading">loading the main image: %1s%%</string>
+    <string name="no_authorised_user">NO_AUTHORISED_USER</string>
+    <string name="one_1">1</string>
+
+    <!-- Add Application ViewModel Toasts -->
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="maybe_application_do_not_upload">The ad may not have been loaded, or it may not have been fully loaded</string>
+
+    <!-- Check Internet-->
+    <string name="need_internet">The application requires an Internet connection</string>
+    <string name="no_internet">NO INTERNET SIGNAL</string>
+    <string name="no_internet_please_wait">Weak cellular signal. Please check the connection of your smartphone to the mobile Internet album WiFi, album wait until the signal appears</string>
+    <string name="no_internet_please_without_wait">Weak cellular signal. Please check the connection of your smartphone to the mobile Internet or WiFi!</string>
+
+    <!-- Show AddAnnouncement Fragment-->
+    <string name="no_message">Without description</string>
+    <string name="tv_info">information</string>
+    <string name="delete_ann">Do you really want to delete the ad?</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Remove</string>
+    <string name="favorite">like</string>
+    <string name="no_additional_info">there is no additional information</string>
+    <string name="app_will_be_block">blocking</string>
+    <string name="next">next</string>
+
+
+    <string name="blocked_add">Your ad has been marked as non-compliant with the publication rules: \n\n %1$s\n\n Please read the rules and edit the ad.</string>
+    <string name="blocked_my_add">Your ad has been marked as non-compliant with the publication rules. Please read the rules and edit the ad.</string>
+    <string name="can_block">If this ad does not comply with the publication rules (UGC), you can block it</string>
+    <string name="block_ann">Select inconsistencies or write why you think this ad does not comply with the publication rules and click \"block 🤚\"</string>
+    <string name="block_ann_default_text">Does not comply with the publication rules!</string>
+
+    <string name="block">block</string>
+    <string name="ann_blocked">blocked</string>
+    <string name="warning">Attention!</string>
+    <string name="are_you_sure_delete_application">are you sure you want to permanently delete the ad</string>
+    <string name="yes_sure">Yes</string>
+    <string name="no_no_no">No</string>
+
+    <!-- Show Location Fragment-->
+    <string name="location_copy">location copied to clipboard</string>
+
+    <!-- string array Restricted Content -->
+    <string-array name="restricted_content">
+        <item>Harmful or dangerous content</item>
+        <item>Illegal activities and regulated goods</item>
+        <item>Violent and graphic content</item>
+        <item>Animal cruelty</item>
+        <item>Suicide or self-harm</item>
+        <item>Hate speech</item>
+        <item>Harassment or bullying</item>
+        <item>Pornography and nudity</item>
+    </string-array>
+
+</resources>

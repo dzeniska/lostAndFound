@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/smileId"
+    android:layout_width="31dp"
+    android:layout_height="31dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    />

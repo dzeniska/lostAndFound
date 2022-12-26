@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/id_lost"
+        android:title="@string/item_lost"
+        android:icon="@drawable/ic_lost"
+        />
+    <item
+        android:id="@+id/id_found"
+        android:title="@string/item_found"
+        android:icon="@drawable/ic_found"
+        />
+    <item
+        android:id="@+id/id_found4"
+        android:title="@string/item_found"
+        android:icon="@drawable/ic_found"
+        />
+    <item
+        android:id="@+id/id_all_ann"
+        android:title="@string/item_add_application"
+        android:icon="@drawable/ic_add_application"
+        />
+</menu>

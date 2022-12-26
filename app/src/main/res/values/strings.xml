@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name" translatable="false">Бюро знаходак</string>
+
+    <!-- Default location -->
+    <string name="default_latitude" translatable="false">53.9304806</string>
+    <string name="default_longitude" translatable="false">27.5040637</string>
+
+    <!--Navigation Rail Menu-->
+    <string name="item_lost">Страчанае</string>
+    <string name="item_found">Знойдзенае</string>
+    <string name="item_all_ann">Усе разам</string>
+    <string name="item_registration">Рэгістрацыя</string>
+    <string name="item_add_application">Падаць аб\'яву</string>
+
+    <!-- Show Dialog Permissions-->
+    <string name="permissions_denied_forever">У дазволах адмоўлена назаўжды</string>
+    <string name="permission_denied">Адмоўлена ў дазволе</string>
+    <string name="permission_denied_forever_header">"Вы назаўсёды адмовілі нам ў дазволах:\n%1$s,\n%2$s."</string>
+    <string name="permission_denied_forever_message">"Але вы можаце змяніць сваё рашэнне ў наладах прыкладання"</string>
+    <string name="open">Адкрыць</string>
+
+    <!-- Show Dialog LogOut-->
+    <string name="action_on_google_account">Дзеянне над Google акаўнтам</string>
+    <string name="change_google_account">Змянiць</string>
+    <string name="exit_from_google_account">Выйсце</string>
+
+
+    <!--Dialog UI-->
+    <string name="exit">exit</string>
+    <string name="ok">так</string>
+    <string name="ok3">згодзен</string>
+
+    <!-- Show Dialog Block Ann-->
+    <string name="do_not_enter_char">Вы не ўвялі ні воднага знака</string>
+
+
+    <!-- Fragment Add Application-->
+    <string name="description_loc_unselected">Выбар месцазнаходжання</string>
+    <string name="tv_loc_unselected">Месцазнаходжанне</string>
+    <string name="description_select_cat">Выбар катэгорыі: страціў ці знайшоў</string>
+    <string name="tv_select_cat_lost_or_found">Cтраціў альбо Знайшоў</string>
+    <string name="tv_select_cat_lost">Cтраціў</string>
+    <string name="tv_select_cat_found">Знайшоў</string>
+    <string name="description_enter_tel_num">увядзіце нумар тэлефона</string>
+    <string name="_375_45">+375 45 … … …</string>
+    <string name="header">Загаловак</string>
+    <string name="additional_information">Дадатковая інфармацыя</string>
+    <string name="info">Важна! Перад публікацыяй аб\'явы азнаёмцеся з правіламі</string>
+    <string name="description_info">Важна! Перад публікацыяй аб\'явы азнаёмцеся з правіламі</string>
+    <string name="description_publish_an_ad">Апублікаваць аб\'яву</string>
+    <!-- Fill fields-->
+    <string name="no_change_location">Не абраная лакацыя</string>
+    <string name="no_change_photo">Калі ў вас няма фота 📸 згубленай рэчы, калі ласка, загрузіце аналагічную, альбо падобную карцінку з сеткі Інтэрнэт</string>
+    <string name="no_change_category">Не абраная катэгорыя</string>
+    <string name="no_change_tel_num">Не абраны нумар тэлефона</string>
+    <string name="no_tel_num">Няма нумара тэлефона \n 📵</string>
+    <string name="no_change_additional_info">Няма дадатковай інфармацыі</string>
+
+    <!-- Item Choose Photo Adapter-->
+    <string name="description_reselect_photo">Выбар фото</string>
+    <string name="description_delete_photo">Удалить фото</string>
+
+    <!-- Fragment Map-->
+    <string name="your_last_location">месцазнаходжанне ўсталявана</string>
+    <string name="location_searching">выконваецца пошук месцазнаходжання…</string>
+    <string name="gps_provider_is_not_enabled">GPS адключаны!</string>
+    <string name="no_gps_permission">Неабходны дазвол на выкарыстанне GPS!</string>
+    <string name="your_web_client_id" translatable="false">367049868778-ukp39v36mfffku85r0r2c8jio11626uu.apps.googleusercontent.com</string>
+    <string name="email">email</string>
+    <string name="loading_markers">загрузка…</string>
+    <string name="ann_was_deleted">Ух, не пашанцавала!.. Гэта аб\'ява ўжо выдаленае</string>
+    <string name="need_to_register">неабходна зарэгістравацца</string>
+    <string name="menu">меню</string>
+
+
+    <!-- Dialog Deleted Application -->
+    <string name="this_application_was_deleted">гэтую аб\'яву толькi што выдалiлi</string>
+
+    <!-- Dialog Blocked Application -->
+    <string name="this_application_was_blocked">Прабачце, але гэтая аб\'ява не адпавядае правілам публікацыі \n Магчыма, Вы больш не зможаце яе ўбачыць</string>
+
+    <!-- Fragment Change Location-->
+    <string name="save">Захаваць</string>
+
+    <!-- Dialog Prepare And Upload Images -->
+    <string name="preparing_images_for_uploading">падрыхтоўка малюнкаў да загрузцы… %1s …</string>
+    <string name="preparing_main_image_for_uploading">галоўнае фота</string>
+    <string name="images_uploading">загрузка %2s-га малюнка: %1s%% …</string>
+    <string name="main_image_uploading">загрузка галоЎнага малюнка: %1s%%</string>
+    <string name="u_neskladovaye" translatable="false">Ў</string>
+    <string name="no_authorised_user">NO_AUTHORISED_USER</string>
+    <string name="one_1">1</string>
+
+    <!-- Add Application ViewModel Toasts -->
+    <string name="something_went_wrong">Нешта пайшло не так!</string>
+    <string name="maybe_application_do_not_upload">Магчыма, аб\'ява не загружана, альбо загружана не цалкам</string>
+
+    <!-- Check Internet-->
+    <string name="need_internet">Для прыкладання неабходна падключэнне да сеткі Internet</string>
+    <string name="no_internet">NO INTERNET SIGNAL</string>
+    <string name="no_internet_please_wait">Слабы сігнал сотавай сувязі. Калі ласка праверце падлучэнне вашага смартфона да мабільнай сеткі Internet альбо WiFi, альбо пачакайце пакуль не з\'явіцца сігнал</string>
+    <string name="no_internet_please_without_wait">Слабы сігнал сотавай сувязі. Калі ласка праверце падлучэнне вашага смартфона да мабільнай сеткі Internet альбо WiFi!</string>
+
+    <!-- Show AddAnnouncement Fragment-->
+    <string name="no_message">Без апісання</string>
+    <string name="tv_info">інфармацыя</string>
+    <string name="delete_ann">Вы сапраўды хочаце выдаліць аб\'яву?</string>
+    <string name="edit">Рэдагаваць</string>
+    <string name="delete">Выдаліць</string>
+    <string name="favorite">падабайка</string>
+    <string name="no_additional_info">няма дадатковых звестак</string>
+    <string name="app_will_be_block">блакіроўка</string>
+    <string name="next">далей</string>
+
+    <string name="blocked_add">Ваша аб\'ява была пазначана як неадпаведная правілам публікацыі: \n\n %1$s\n\n Калі ласка, азнаёмцеся з Правіламі і адрэдагуйце аб\'яву.</string>
+    <string name="blocked_my_add">Ваша аб\'ява была пазначана як неадпаведная правілам публікацыі. Калі ласка, азнаёмцеся з Правіламі і адрэдагуйце аб\'яву.</string>
+    <string name="can_block">Калі гэта аб\'ява не адпавядае правілам публікацыі, можаце яе заблакаваць</string>
+    <string name="block_ann">Выберыце пункт неадпаведнасці або напішыце, чаму вы лічыце, што гэта аб\'ява не адпавядае правілам публікацыі і націсніце \"block 🤚\"</string>
+    <string name="block_ann_default_text">Не адпавядае правілам публікацыі!</string>
+    <string name="block">заблакаваць</string>
+    <string name="ann_blocked">заблакавана</string>
+    <string name="warning">увага!</string>
+    <string name="are_you_sure_delete_application">вы ўпэўненыя, што жадаеце канчаткова выдаліць аб\'яву</string>
+    <string name="yes_sure">Да</string>
+    <string name="no_no_no">Нет</string>
+
+    <!-- Show Location Fragment-->
+    <string name="location_copy">лакацiя скапIрaвана ў буфер абмену</string>
+
+    <!-- Emoji -->
+    <string name="big_heart" translatable="false">♥️</string>
+    <string name="smile" translatable="false">😁</string>
+    <string name="smile_w_monocle" translatable="false">🧐</string>
+    <string name="pig" translatable="false">🐖</string>
+    <string name="search" translatable="false">🔍</string>
+    <string name="telephone" translatable="false">☎️ </string>
+    <string name="no_mobile_phones" translatable="false">📵</string>
+    <string name="email_emoji" translatable="false">✉️</string>
+    <string name="kar" translatable="false">🚗</string>
+    <string name="key" translatable="false">🔑</string>
+    <string name="ghost" translatable="false">👻</string>
+
+    <string name="umbrella" translatable="false">🌂</string>
+    <string name="glove" translatable="false">🧤</string>
+    <string name="cash" translatable="false">💵</string>
+    <string name="cash_bag" translatable="false">💰</string>
+    <string name="eye" translatable="false">👁️‍🗨️‍</string>
+    <string name="copy" translatable="false">📲‍</string>
+    <string name="button_block" translatable="false">block</string>
+
+
+    <string-array name="emoji_array">
+        <item>♥️</item>
+        <item>😁</item>
+        <item>🧐</item>
+        <item>🐖</item>
+        <item>🔍</item>
+        <item>☎️ </item>
+        <item>📵</item>
+        <item>✉️</item>
+        <item>🚗</item>
+        <item>🔑</item>
+        <item>👻</item>
+        <item>🌂</item>
+        <item>🧤</item>
+        <item>💵</item>
+        <item>💰</item>
+        <item>👁️‍🗨️</item>
+        <item>📲‍</item>
+    </string-array>
+
+    <!-- string array Restricted Content -->
+    <string-array name="restricted_content">
+        <item>Шкодны або небяспечны кантэнт</item>
+        <item>Незаконная дзейнасць і падкаранцінныя тавары</item>
+        <item>Жорсткі і графічны кантэнт</item>
+        <item>Жорсткае абыходжанне з жывёламі</item>
+        <item>Самагубства або членашкодніцтва</item>
+        <item>Ненавісніцкія выказванні</item>
+        <item>Пераслед або Здзекі</item>
+        <item>Парнаграфія і галізна</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_open_drawer_margin_start">-50dp</dimen>
+    <dimen name="item_drawer_height">90dp</dimen>
+    <dimen name="item_drawer_height_plus">98dp</dimen>
+    <dimen name="item_drawer_image_height">45dp</dimen>
+    <dimen name="item_drawer_photo_height">63dp</dimen>
+    <dimen name="item_drawer_text_size">12sp</dimen>
+
+    <dimen name="message_radius">12dp</dimen>
+</resources>

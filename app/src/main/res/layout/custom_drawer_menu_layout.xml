@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customDrawerMenuLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start|center_vertical"
+    android:background="@drawable/nav_rail_background"
+    android:padding="8dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageButton
+        android:id="@+id/ibLost"
+        android:layout_width="@dimen/item_drawer_height"
+        android:layout_height="@dimen/item_drawer_height"
+        android:visibility="visible"
+        tools:visibility="visible"
+        android:background="@drawable/custom_button_background_normal"
+        android:foregroundGravity="fill_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/ibLost"
+        app:layout_constraintEnd_toEndOf="@id/ibLost"
+        app:layout_constraintStart_toStartOf="@id/ibLost"
+        app:layout_constraintTop_toTopOf="@id/ibLost">
+
+        <ImageView
+            android:id="@+id/ivLost"
+            android:layout_width="@dimen/item_drawer_image_height"
+            android:layout_height="@dimen/item_drawer_image_height"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lost" />
+
+        <TextView
+            android:id="@+id/tvLost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/item_lost"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_drawer_text_size" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibFound"
+        android:layout_width="@dimen/item_drawer_height"
+        android:layout_height="@dimen/item_drawer_height"
+        android:visibility="visible"
+        tools:visibility="visible"
+        android:background="@drawable/custom_button_background_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibLost" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/ibFound"
+        app:layout_constraintEnd_toEndOf="@id/ibFound"
+        app:layout_constraintStart_toStartOf="@id/ibFound"
+        app:layout_constraintTop_toTopOf="@id/ibFound">
+
+        <ImageView
+            android:id="@+id/ivFound"
+            android:layout_width="@dimen/item_drawer_image_height"
+            android:layout_height="@dimen/item_drawer_image_height"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_found" />
+
+        <TextView
+            android:id="@+id/tvFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/item_found"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_drawer_text_size" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibAddApplication"
+        android:layout_width="@dimen/item_drawer_height"
+        android:layout_height="@dimen/item_drawer_height"
+        android:background="@drawable/custom_button_background_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibFound" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/ibAddApplication"
+        app:layout_constraintEnd_toEndOf="@id/ibAddApplication"
+        app:layout_constraintStart_toStartOf="@id/ibAddApplication"
+        app:layout_constraintTop_toTopOf="@id/ibAddApplication">
+
+        <ImageView
+            android:id="@+id/ivAddApplication"
+            android:layout_width="@dimen/item_drawer_image_height"
+            android:layout_height="@dimen/item_drawer_image_height"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_add_application" />
+
+        <TextView
+            android:id="@+id/tvAddApplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:ellipsize="middle"
+            android:text="@string/item_add_application"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_drawer_text_size" />
+    </LinearLayout>
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/ibLogin"
+        android:layout_width="@dimen/item_drawer_height"
+        android:layout_height="@dimen/item_drawer_height"
+        app:buttonSize="icon_only"
+        android:background="@drawable/custom_button_background_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibAddApplication" />
+
+    <LinearLayout
+        android:id="@+id/loginPhotoLayout"
+        android:layout_width="@dimen/item_drawer_height"
+        android:layout_height="@dimen/item_drawer_height"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@drawable/custom_button_background_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibAddApplication">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/ivPhoto"
+            android:layout_width="@dimen/item_drawer_photo_height"
+            android:layout_height="@dimen/item_drawer_photo_height"
+            app:round="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_account_default" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="@string/email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_drawer_text_size" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loginProgressBar"
+        android:layout_width="@dimen/item_drawer_height"
+        android:layout_height="@dimen/item_drawer_height"
+        android:padding="2dp"
+        android:elevation="8dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibAddApplication" />
+
+</merge>

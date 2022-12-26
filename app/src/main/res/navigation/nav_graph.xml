@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.dzenis_ska.lostandfound.ui.fragments.map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_addApplicationFragment"
+            app:destination="@id/addApplicationFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_showApplicationFragment"
+            app:destination="@id/showApplicationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeLocationFragment"
+        android:name="com.dzenis_ska.lostandfound.ui.fragments.changeLocation.ChangeLocationFragment"
+        android:label="fragment_change_location"
+        tools:layout="@layout/fragment_change_location" >
+        <argument
+            android:name="argsCLF"
+            app:argType="com.dzenis_ska.lostandfound.ui.fragments.changeLocation.ChangeLocationFragmentArguments"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.dzenis_ska.lostandfound.ui.fragments.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/addApplicationFragment"
+        android:name="com.dzenis_ska.lostandfound.ui.fragments.add_application.AddApplicationFragment"
+        android:label="fragment_add_application"
+        tools:layout="@layout/fragment_add_application" >
+        <argument
+            android:name="argsAAF"
+            app:argType="com.dzenis_ska.lostandfound.ui.fragments.add_application.AddApplicationFragmentArguments"
+            />
+        <action
+            android:id="@+id/action_addApplicationFragment_to_changeLocationFragment"
+            app:destination="@id/changeLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showApplicationFragment"
+        android:name="com.dzenis_ska.lostandfound.ui.fragments.showApplication.ShowApplicationFragment"
+        android:label="fragment_show_application"
+        tools:layout="@layout/fragment_show_application" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_showApplicationFragment_to_showLocationFragment"
+            app:destination="@id/showLocationFragment" />
+        <action
+            android:id="@+id/action_showApplicationFragment_to_addApplicationFragment"
+            app:destination="@id/addApplicationFragment" />
+        <action
+            android:id="@+id/action_showApplicationFragment_to_showFullPhotoFragment"
+            app:destination="@id/showFullPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showLocationFragment"
+        android:name="com.dzenis_ska.lostandfound.ui.fragments.showLocation.ShowLocationFragment"
+        android:label="ShowLocationFragment" >
+        <argument
+            android:name="argsSLF"
+            app:argType="com.dzenis_ska.lostandfound.ui.fragments.showLocation.ShowLocationFragmentArguments" />
+    </fragment>
+    <fragment
+        android:id="@+id/showFullPhotoFragment"
+        android:name="com.dzenis_ska.lostandfound.ui.fragments.showFullPhoto.ShowFullPhotoFragment"
+        android:label="fragment_show_full_photo"
+        tools:layout="@layout/fragment_show_full_photo">
+        <argument
+            android:name="photoUrl"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+</navigation>
