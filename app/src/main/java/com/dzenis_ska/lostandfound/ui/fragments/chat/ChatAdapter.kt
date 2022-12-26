@@ -43,6 +43,7 @@ class ChatAdapter(private val editMessageListener: EditMessageListener) :
             is Messages.MyMessage -> MY_MESSAGE
             is Messages.TimeSpace -> TIME_SPACE
             is Messages.HisMessage -> HIS_MESSAGE
+//            else -> TIME_SPACE
         }
     }
 
