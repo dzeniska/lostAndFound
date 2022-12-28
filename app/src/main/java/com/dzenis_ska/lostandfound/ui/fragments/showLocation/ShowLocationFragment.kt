@@ -26,6 +26,7 @@ class ShowLocationFragment : BaseMapFragment(R.layout.fragment_show_location) {
         }
         googleMap.addMarker(
             MarkerOptions().position(target)
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET))
                 .snippet( args.argsSLF.location.latitude.toString() +" "+ args.argsSLF.location.longitude.toString())
                 .title(getString(R.string.location_copy) + " " + getString(R.string.copy))
         )

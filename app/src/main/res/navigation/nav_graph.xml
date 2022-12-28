@@ -63,6 +63,9 @@
         <action
             android:id="@+id/action_showApplicationFragment_to_showFullPhotoFragment"
             app:destination="@id/showFullPhotoFragment" />
+        <action
+            android:id="@+id/action_showApplicationFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
     </fragment>
     <fragment
         android:id="@+id/showLocationFragment"
@@ -81,6 +84,15 @@
             android:name="photoUrl"
             app:argType="string"
             android:defaultValue="" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.dzenis_ska.lostandfound.ui.fragments.chat.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat">
+        <argument
+            android:name="args"
+            app:argType="com.dzenis_ska.lostandfound.ui.fragments.chat.ChatFragmentArguments" />
     </fragment>
 
 </navigation>

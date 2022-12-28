@@ -17,6 +17,7 @@ import com.dzenis_ska.lostandfound.databinding.ActivityMainBinding
 import com.dzenis_ska.lostandfound.ui.fragments.add_application.AddApplicationFragmentArguments
 import com.dzenis_ska.lostandfound.ui.fragments.add_application.AddApplicationFragmentDirections
 import com.dzenis_ska.lostandfound.ui.fragments.changeLocation.ChangeLocationFragmentArguments
+import com.dzenis_ska.lostandfound.ui.fragments.chat.ChatFragmentArguments
 import com.dzenis_ska.lostandfound.ui.fragments.map.MapFragmentDirections
 import com.dzenis_ska.lostandfound.ui.fragments.showApplication.ShowApplicationFragmentDirections
 import com.dzenis_ska.lostandfound.ui.fragments.showLocation.ShowLocationFragmentArguments
@@ -134,6 +135,12 @@ class MainActivity : AppCompatActivity(), Navigator
     override fun goToShowLocationFragment(showLocationFragmentArguments: ShowLocationFragmentArguments) {
         Log.d("!!!goToShowLocationFragment", "${navController?.context}")
         val direction = ShowApplicationFragmentDirections.actionShowApplicationFragmentToShowLocationFragment(showLocationFragmentArguments)
+        navController?.navigate(direction)
+    }
+
+    override fun goToChatFragment(chatFragmentArguments: ChatFragmentArguments) {
+        Log.d("!!!goToChatFragment", "${navController?.context}")
+        val direction = ShowApplicationFragmentDirections.actionShowApplicationFragmentToChatFragment(chatFragmentArguments)
         navController?.navigate(direction)
     }
 

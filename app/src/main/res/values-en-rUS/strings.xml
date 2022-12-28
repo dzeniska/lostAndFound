@@ -21,6 +21,8 @@
     <string name="change_google_account">To change</string>
     <string name="exit_from_google_account">Exit</string>
 
+    <!--Chat UI-->
+    <string name="message_is_empty">Field /"mess/" is empty</string>
 
     <!--Dialog UI-->
     <string name="exit">exit</string>

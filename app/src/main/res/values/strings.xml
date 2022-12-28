@@ -25,6 +25,9 @@
     <string name="exit_from_google_account">Выйсце</string>
 
 
+    <!--Chat UI-->
+    <string name="message_is_empty">Вы нiчога не увялi</string>
+
     <!--Dialog UI-->
     <string name="exit">exit</string>
     <string name="ok">так</string>

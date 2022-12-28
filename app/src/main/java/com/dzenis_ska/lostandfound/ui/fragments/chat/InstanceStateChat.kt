@@ -8,3 +8,8 @@ data class InstanceStateChat(
     val count: Int? = 0
 ): Parcelable {
 }
+
+@Parcelize
+data class ChatFragmentArguments(
+    val additionalInfo: String
+): Parcelable

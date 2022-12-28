@@ -59,6 +59,10 @@ class ShowApplicationViewModel(
         requestForInfo()
     }
 
+    fun goToChatFragment() {
+        TODO("Not yet implemented")
+    }
+
     private fun requestForInfo(){
         viewModelScope.launch {
             fbDatabase.getInfoFlow(key = id) {
@@ -228,6 +232,8 @@ class ShowApplicationViewModel(
         fbDatabase.removeChildEventListenerShowApplication()
         super.onCleared()
     }
+
+
 }
 
 class ShowPhotoPreload(

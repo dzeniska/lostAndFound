@@ -16,6 +16,7 @@
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable-xhdpi/custom_orange_button_background_normal.xml" value="0.1725" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/back_aponent_mess.xml" value="0.1995" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/back_my_mess.xml" value="0.1995" />
+        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/background_chat_enter_edit_text.xml" value="0.1995" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/background_img_item_map_fr.xml" value="0.138" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/background_item_adapter.xml" value="0.1845" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/background_item_adapter_found.xml" value="0.1705" />
@@ -43,6 +44,8 @@
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/ic_main_search.xml" value="0.186" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/ic_phone_calling.xml" value="0.184" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/ic_replace.xml" value="0.2165" />
+        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/ic_send.xml" value="0.1995" />
+        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/ic_send_image.xml" value="0.1995" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/ic_wait.xml" value="0.2165" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/image_button_background.xml" value="0.1475" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/image_button_background_normal.xml" value="0.1475" />
@@ -50,6 +53,8 @@
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/loc_button_background_normal.xml" value="0.2165" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/loc_button_background_pressed.xml" value="0.2165" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/nav_rail_background.xml" value="0.2215" />
+        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/send_background_pressed.xml" value="0.1655" />
+        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/send_button_background.xml" value="0.1655" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/splash.xml" value="0.186" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/tab_indicator_default.xml" value="0.2165" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/drawable/tab_indicator_selected.xml" value="0.149" />
@@ -58,7 +63,7 @@
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout-land/dialog_application_was_deleted.xml" value="0.31261261261261264" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout-land/fragment_add_application.xml" value="0.4261261261261261" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout-land/fragment_change_location.xml" value="0.23873873873873874" />
-        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout-land/fragment_show_application.xml" value="0.4015625" />
+        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout-land/fragment_show_application.xml" value="0.264" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout-land/fragment_show_location.xml" value="0.2018018018018018" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout-land/item_choose_photo_adapter.xml" value="0.176" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout-v28/activity_main.xml" value="0.25" />
@@ -76,11 +81,11 @@
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_add_application.xml" value="0.2" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_camera.xml" value="0.25" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_change_location.xml" value="0.25" />
-        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_chat.xml" value="0.264" />
+        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_chat.xml" value="0.4" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_login.xml" value="0.1" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_map.xml" value="0.2" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_maps_m_m_m_m_m_m_m_m_m_m.xml" value="0.221875" />
-        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_show_application.xml" value="0.264" />
+        <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_show_application.xml" value="0.25" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_show_full_photo.xml" value="0.11822916666666666" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/fragment_show_location.xml" value="0.2018018018018018" />
         <entry key="..\:/android/lost_and_found/LostAndFound/app/src/main/res/layout/item_adapter_apponent_message.xml" value="0.25" />

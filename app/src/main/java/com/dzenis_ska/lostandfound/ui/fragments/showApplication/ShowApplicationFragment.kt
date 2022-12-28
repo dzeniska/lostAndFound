@@ -20,6 +20,7 @@ import com.dzenis_ska.lostandfound.databinding.FragmentShowApplicationBinding
 import com.dzenis_ska.lostandfound.ui.db.firebase.classes.RequestFromBureau
 import com.dzenis_ska.lostandfound.ui.fragments.add_application.Category
 import com.dzenis_ska.lostandfound.ui.fragments.add_application.DefaultTelNum.defaultTelNum
+import com.dzenis_ska.lostandfound.ui.fragments.chat.ChatFragmentArguments
 import com.dzenis_ska.lostandfound.ui.fragments.map.MapFragment
 import com.dzenis_ska.lostandfound.ui.fragments.showLocation.ShowLocationFragmentArguments
 import com.dzenis_ska.lostandfound.ui.utils.*
@@ -253,6 +254,9 @@ class ShowApplicationFragment: Fragment(R.layout.fragment_show_application) {
             }
 
         }
+        tvMessage.setOnClickListener {
+            navigator().goToChatFragment(ChatFragmentArguments(requestFromBureau.additionalInfo ?: ""))
+        }
 
         tvNoRules.setOnClickListener {
             //todo #h3
@@ -266,6 +270,7 @@ class ShowApplicationFragment: Fragment(R.layout.fragment_show_application) {
                 }
             }
         }
+
         btnEdit.setOnClickListener {
             navigator().goToAddApplicationFragmentFromShowApplicationFragment(requestFromBureau.toAddApplicationFragmentArguments(isEditApplication = true))
         }

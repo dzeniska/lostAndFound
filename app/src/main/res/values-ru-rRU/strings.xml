@@ -20,6 +20,8 @@
     <string name="change_google_account">Изменить</string>
     <string name="exit_from_google_account">Выход</string>
 
+    <!--Chat UI-->
+    <string name="message_is_empty">Вы ничего не ввелi</string>
 
     <!--Dialog UI-->
     <string name="exit">exit</string>
